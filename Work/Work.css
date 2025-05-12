@@ -1,0 +1,241 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+#hero {
+    background: #1f3262;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* Section Styles */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(31, 50, 98, 0.3); 
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Once visible, show them */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover Effect for Sections */
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 20px rgba(31, 50, 98, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Section Titles */
+h2 {
+    color: #1f3262;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #1f3262;
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li, ol li {
+    background: #e3e3e3;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: 1.1rem;
+}
+
+/* Hover Effect for Lists */
+ul li:hover, ol li:hover {
+    background: #d1d1d1;
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+/* Research Grants Section */
+.research-grants {
+    background: white;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.research-grants h2 {
+    color: #1f3262;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.research-grants p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.research-grants ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.research-grants ul li {
+    background: #e3e3e3;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: 1.1rem;
+}
+
+.research-grants ul li:hover {
+    background: #d1d1d1;
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+/* Research Centers Section */
+.research-centers {
+    background: white;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.research-centers h2 {
+    color: #1f3262;
+    font-size: 2.5rem;
+    text-align: center
+}
+/* Responsive Design */
+
+
+@media (max-width: 768px) {
+    #hero {
+        padding: 30px 15px;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    ul li, ol li {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Research Grant Section */
+    .research-grants, .research-centers, .student-research, .scholarships {
+        padding: 15px;
+    }
+
+    /* Adjust list items */
+    .research-grants ul li, .research-centers ul li, .student-research ul li, .scholarships ul li {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Adjust section title size */
+    .research-grants h2, .research-centers h2, .student-research h2, .scholarships h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Larger Screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    #hero {
+        padding: 80px 20px;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    #hero p {
+        font-size: 1.5rem;
+    }
+
+    section {
+        max-width: 1000px;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    ul li, ol li {
+        font-size: 1.3rem;
+        padding: 15px;
+    }
+
+    ul li:hover, ol li:hover {
+        transform: translateX(15px);
+    }
+
+    /* Research Grant Section */
+    .research-grants, .research-centers, .student-research, .scholarships {
+        padding: 30px;
+    }
+
+    /* Adjust list items */
+    .research-grants ul li, .research-centers ul li, .student-research ul li, .scholarships ul li {
+        font-size: 1.3rem;
+        padding: 15px;
+    }
+
+    /* Adjust section title size */
+    .research-grants h2, .research-centers h2, .student-research h2, .scholarships h2 {
+        font-size: 2.5rem;
+    }
+}

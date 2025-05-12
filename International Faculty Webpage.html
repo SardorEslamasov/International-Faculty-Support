@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Faculty Support - New Uzbekistan University</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />  
+    <link rel="stylesheet" href="International Faculty UI.css">
+    
+</head>
+<body>
+    <!-- Hero Section -->
+    <div id="hero">
+        <video autoplay muted loop playsinline id="heroVideo">
+        <source src="images/Hero/videoplayback (1).mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+        </video>
+    
+        <div class="hero-overlay">
+            <div class="hero-text-content" data-aos="fade-up">
+                <h1>Empowering Global Faculty</h1>
+                <p>Comprehensive support for your journey at New Uzbekistan University</p>
+                <a href="#sectionsGrid" class="cta-button" data-aos="zoom-in" data-aos-delay="200">Explore Support Areas</a>
+              </div>
+              
+              <div class="hero-highlights">
+                <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-flask"></i>
+                  <h3>World-Class Research</h3>
+                  <p>Access labs, grants, and global publication opportunities.</p>
+                </div>
+                <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-globe"></i>
+                  <h3>International Faculty</h3>
+                  <p>Join a diverse academic team from over 20 countries.</p>
+                </div>
+                <div class="highlight-card" data-aos="fade-up" data-aos-delay="300">
+                  <i class="fas fa-university"></i>
+                  <h3>Smart Campus</h3>
+                  <p>Enjoy modern labs, co-working spaces, and a digital-first ecosystem.</p>
+                </div>
+                <div class="highlight-card" data-aos="fade-up" data-aos-delay="400">
+                  <i class="fas fa-hands-helping"></i>
+                  <h3>Personalized Support</h3>
+                  <p>Get full assistance with visa, relocation, and family integration.</p>
+                </div>
+              </div>
+              
+              <div class="highlight-cta" data-aos="fade-in" data-aos-delay="500">
+                <a href="#sectionsGrid" class="cta-button">Start Your Journey →</a>
+              </div>
+              
+          
+        </div>
+    </div>
+    
+    
+    <!-- Main Content Grid -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- 🔰 Section Intro (Title + Description) -->
+            <section class="section-intro">
+                <h2 class="intro-heading"><i class="fas fa-compass"></i> Navigate Your International Faculty Journey</h2>
+                <p class="intro-description">
+                Explore all areas of support provided to our international faculty members — from visa processes and work-life to health, family, and community integration at New Uzbekistan University.
+                </p>
+            </section>
+            
+            
+            <div class="sections-grid" id="sectionsGrid">
+                <!-- Section 1 -->
+                <div class="section-card" data-section="visa">
+                    <div class="section-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3 class="section-title">Preparing For Uzbekistan</h3>
+                </div>
+                
+                <!-- Section 2 -->
+                <div class="section-card" data-section="arrival">
+                    <div class="section-icon">
+                        <i class="fas fa-plane-arrival"></i>
+                    </div>
+                    <h3 class="section-title">Upon Arrival</h3>
+                </div>
+                
+                <!-- Section 3 -->
+                <div class="section-card" data-section="start">
+                    <div class="section-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3 class="section-title">Getting Started</h3>
+                </div>
+                
+                <!-- Section 4 -->
+                <div class="section-card" data-section="work">
+                    <div class="section-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="section-title">Work</h3>
+                </div>
+                
+                <!-- Section 5 -->
+                <div class="section-card" data-section="family">
+                    <div class="section-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="section-title">Family Matters</h3>
+                </div>
+                
+                <!-- Section 6 -->
+                <div class="section-card" data-section="community">
+                    <div class="section-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="section-title">Community Life</h3>
+                </div>
+                
+                <!-- Section 7 -->
+                <div class="section-card" data-section="safety">
+                    <div class="section-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="section-title">Safety</h3>
+                </div>
+                
+                <!-- Section 8 -->
+                <div class="section-card" data-section="health">
+                    <div class="section-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="section-title">Health & Wellness</h3>
+                </div>
+            </div>
+            
+            <!-- Detailed Panel -->
+            <div class="section-details" id="sectionDetails">
+                <div class="details-header">
+                    <h3 id="detailTitle"><i class="fas fa-passport"></i> Select a Category</h3>
+                    <button id="closeDetails" class="close-btn">&times;</button>
+                </div>
+                <div class="details-content" id="detailContent">
+                    <!-- Content loaded dynamically -->
+                </div>
+            </div>
+        </div>
+
+      <!-- ✅ Testimonials Block (with fade-up animation) -->
+        <div class="testimonial-block fade-up" id="testimonials">
+            <div class="container">
+            <h2 class="section-heading">What Our International Faculty Say</h2>
+            <div class="swiper testimonialSwiper">
+                <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide testimonial-slide">
+                    <p class="quote">"NUU offers world-class facilities and an incredibly supportive community."</p>
+                    <div class="author">
+                    <img src="images/Testimonials/professor-lee.jpg" alt="Dr. Sanghyuk Lee" />
+                    <h4>Dr. Sanghyuk Lee</h4>
+                    <p>South Korea, Department of Software Engineering</p>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide testimonial-slide">
+                    <p class="quote">"Tashkent has surprised me in the best way. Teaching here is both rewarding and inspiring."</p>
+                    <div class="author">
+                    <img src="images/Testimonials/professor-gizem.jpg" alt="Prof. Gizem Uzuner" />
+                    <h4>Prof. Gizem Uzuner</h4>
+                    <p>Turkey, Economics</p>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide testimonial-slide">
+                    <p class="quote">"The onboarding experience was so smooth, I felt at home within days."</p>
+                    <div class="author">
+                    <img src="images/Testimonials/professor-irfan.jpg" alt="Dr. Irfan Ud-Din" />
+                    <h4>Dr. Irfan Ud-Din</h4>
+                    <p>Pakistan, Software Engineering</p>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            </div>
+        </div>
+        
+        <!-- ✅ Stats & Calendar Block -->
+<div class="stats-calendar-block">
+    <div class="stats-calendar-container">
+      <!-- Left: Stats (2x2 Grid) -->
+      <div class="stats-box">
+        <h2 class="section-heading">By the Numbers</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <p class="stat-number" data-count="45">0</p>
+            <p class="stat-label">International Faculty</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number" data-count="18">0</p>
+            <p class="stat-label">Countries Represented</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number" data-count="12">0</p>
+            <p class="stat-label">Research Grants</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number" data-count="20">0</p>
+            <p class="stat-label">Labs & Facilities</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right: Calendar -->
+      <div class="calendar-box">
+        <h2 class="section-heading">Orientation Calendar</h2>
+        <div class="calendar">
+          <!-- Example Calendar for May 2025 -->
+          <table>
+            <thead>
+              <tr>
+                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr>
+              <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+              <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr>
+              <tr><td>18</td><td>19</td><td class="event">20*</td><td>21</td><td>22</td><td>23</td><td class="event">24*</td></tr>
+              <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="event-descriptions">
+          <p><strong>August 20:</strong> New Faculty Orientation</p>
+          <p><strong>August 24:</strong> Campus Tour + Welcome Ceremony</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    </main>
+   
+   
+    <section id="campus-map" class="campus-map-section fade-up">
+        <div class="container">
+          <h2 class="section-heading">Campus Map & Nearby Essentials</h2>
+      
+          <div class="map-grid">
+            <!-- Embedded Google Map -->
+            <div class="map-box">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.593172328288!2d69.33022147600056!3d41.338012800352334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae89df328c84c7%3A0xd52f9a0b3183b336!2sNew%20Uzbekistan%20University!5e0!3m2!1sen!2s!4v1684324000000!5m2!1sen!2s"
+                width="100%"
+                height="400"
+                style="border:0; border-radius: 12px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+      
+            <!-- Nearby Locations -->
+            <div class="map-legend">
+              <ul class="legend-list">
+                <li><i class="fas fa-university"></i> Main Building</li>
+                <li><i class="fas fa-bed"></i> Faculty Dormitory</li>
+                <li><i class="fas fa-utensils"></i> Cafeteria</li>
+                <li><i class="fas fa-hospital"></i> Clinic & Pharmacy</li>
+                <li><i class="fas fa-subway"></i> Metro Station</li>
+                <li><i class="fas fa-store"></i> Supermarkets & Grocery</li>
+                <li><i class="fas fa-money-check-alt"></i> Bank & ATM</li>
+                <li><i class="fas fa-bus"></i> Bus Stop</li>
+              </ul>
+              <a href="https://www.google.com/maps/dir//New+Uzbekistan+University" target="_blank" class="cta-button small">Open in Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="our-team-section" id="our-team">
+        <div class="container">
+          <h2 class="section-heading">Meet Our HR Team</h2>
+          <div class="team-grid">
+            <div class="team-member">
+              <img src="images/HR Team/Darya Znamenskaya.jpg" alt="Team Member 1" />
+              <h4>Darya Znamenskaya</h4>
+              <p>Head of Human Resources, Recruitment and Operations with Foreign Specialists Department </p>
+              <div class="team-socials">
+                <a href="mailto:d.znamenskaya@newuu.uz" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+              </div>
+            </div>
+            <div class="team-member">
+              <img src="images/HR Team/Kamola Turgunova.jpg" alt="Team Member 2" />
+              <h4>Kamola Turgunova</h4>
+              <p>Recruitment Specialist</p>
+              <div class="team-socials">
+                <a href="mailto:k.turgunova@newuu.uz" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+              </div>
+            </div>
+            <div class="team-member">
+              <img src="images/HR Team/Fakhriddin Makhmudov.jpg" alt="Team Member 3" />
+              <h4>Fakhriddin Makhmudov</h4>
+              <p>Specialist Operating with International Faculty</p>
+              <div class="team-socials">
+                <a href="mailto:f.makhmudov@newuu.uz" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+              </div>
+            </div>
+            <div class="team-member">
+              <img src="images/HR Team/Avazbek Nasimov.jpg" alt="Team Member 4" />
+              <h4>Avazbek Nasimov</h4>
+              <p>HR Support Officer</p>
+              <div class="team-socials">
+                <a href="mailto:a.nasimov@newuu.uz" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Floating Help Widget -->
+    <div class="help-widget">
+        <div class="help-toggle" id="helpToggle">
+        <i class="fas fa-question-circle"></i>
+        </div>
+        <div class="help-options" id="helpOptions">
+        <a href="/Help Widget/FAQ.html" class="help-option"><i class="fas fa-info-circle"></i> Help / FAQ</a>
+        <a href="#feedback" class="help-option"><i class="fas fa-comment-alt"></i> Feedback</a>
+        <a href="mailto:support@newuu.uz" class="help-option"><i class="fas fa-headset"></i> Contact Support</a>
+        </div>
+    </div>
+   <!-- ✅ Load Swiper BEFORE your custom JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- ✅ AOS Init should come BEFORE Swiper init -->
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<!-- ✅ Then initialize Swiper -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(() => {
+        new Swiper(".testimonialSwiper", {
+            loop: true,
+            grabCursor: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true
+            }
+        });
+    }, 500); // Give AOS time to finish
+  });
+</script>
+
+
+    <!-- Your custom script (if needed) -->
+    <script src="International Faculty Script.js"></script>
+
+    <!-- Feedback Modal -->
+<div id="feedbackBox" class="feedback-box hidden">
+  <h3>Feedback</h3>
+  <form id="feedbackForm">
+    <input type="text" name="name" placeholder="Your Name (optional)" />
+    <input type="email" name="email" placeholder="Your Email (optional)" />
+    <textarea name="message" rows="4" placeholder="Your Feedback..." required></textarea>
+    <button type="submit">Submit</button>
+    <span id="feedbackClose" class="close-btn">&times;</span>
+  </form>
+</div>
+
+</body>
+</html>

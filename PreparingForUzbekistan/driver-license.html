@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver License</title>
+    <link rel="stylesheet" href="PreparingForUz.css">
+    <script defer src="PreparingForUz.js"></script>
+</head>
+<body>
+    <div id="hero">
+        <h1>Driver License Guide</h1>
+    </div>
+    
+    <div class="info-section">
+        <h2>Steps to Obtain a Driver License</h2>
+        <ul>
+            <li>Check eligibility requirements</li>
+            <li>Gather necessary documents</li>
+            <li>Pass the written test</li>
+            <li>Complete a driving course</li>
+            <li>Pass the road test</li>
+            <li>Receive your driver license</li>
+        </ul>
+    </div>
+    
+    <table class="timeline-table">
+        <thead>
+            <tr>
+                <th>Step</th>
+                <th>Description</th>
+                <th>Estimated Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Written Test</td>
+                <td>Multiple-choice exam covering traffic laws</td>
+                <td>1 hour</td>
+            </tr>
+            <tr>
+                <td>Driving Course</td>
+                <td>Practical lessons with a certified instructor</td>
+                <td>1-2 weeks</td>
+            </tr>
+            <tr>
+                <td>Road Test</td>
+                <td>On-road driving exam with an evaluator</td>
+                <td>30 minutes</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="faq-question">What is the minimum age to apply? <span>+</span></button>
+                <div class="faq-answer">
+                    <p>The minimum age requirement varies by country but is typically 16 or 18.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="faq-question">What documents are needed? <span>+</span></button>
+                <div class="faq-answer">
+                    <p>You typically need identification, proof of residency, and medical certificates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".faq-question").forEach(button => {
+            button.addEventListener("click", () => {
+                const answer = button.nextElementSibling;
+                answer.classList.toggle("show");
+            });
+        });
+    </script>
+</body>
+</html>
